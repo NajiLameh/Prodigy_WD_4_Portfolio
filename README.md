@@ -32,4 +32,4 @@ Follow these steps to set up and run the portfolio project on your local machine
    npm run dev
    ```
 
-After completing these steps, the project should be running locally on your machine and can be used in your code.
+After completing these steps, the project should be running locally on your machine.
