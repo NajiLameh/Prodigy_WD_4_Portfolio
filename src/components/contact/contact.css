@@ -1,0 +1,141 @@
+/*
+=============================
+Table of Content
+=============================
+1.Left Section
+2. Right Section
+3.Responsive
+ */
+
+section.contact div.contact-wrapper {
+  justify-content: space-between;
+}
+/* Left Section */
+section.contact h1.title {
+  font-size: 2.1rem;
+  color: var(--title);
+  margin-bottom: 1.8rem;
+}
+section.contact .icon-envelope {
+  color: var(--subtitle);
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+section.contact p.sub-title {
+  color: var(--subtitle);
+  margin-bottom: 2rem;
+  line-height: 1.65rem;
+}
+
+section.contact label {
+  color: var(--subtitle);
+}
+section.contact #email,
+section.contact #message {
+  all: unset;
+  background-color: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgb(63, 63, 70);
+  font-size: 1.1rem;
+  width: 16rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.light section.contact #email,
+.light section.contact #message {
+  background-color: rgba(255, 255, 255, 0.162);
+  border: 1px solid rgba(128, 128, 128, 0.451);
+  box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
+  color: #232324;
+}
+
+section.contact #message {
+  min-height: 9rem;
+  resize: vertical;
+}
+section.contact #email:focus,
+section.contact #message:focus,
+section.contact #email:hover,
+section.contact #message:hover {
+  border: 1px solid var(--blue);
+}
+.light section.contact #email:focus,
+.light section.contact #message:focus,
+.light section.contact #email:hover,
+.light section.contact #message:hover {
+  border: 1px solid rgb(78, 80, 80);
+}
+
+section.contact button.submit {
+  background-color: rgba(36, 37, 46, 1);
+  padding: 0.75rem 2rem;
+  text-align: center;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  opacity: 0.7;
+  margin-top: 1.8rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: 1px solid rgb(63, 63, 70);
+}
+section.contact button.submit:hover {
+  opacity: 1;
+  border: 1px solid var(--blue);
+}
+.light section.contact button.submit:hover {
+  border: 1px solid #000;
+}
+section.contact button.submit:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+section.contact div.form-feedback {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 1.7rem;
+  color: var(--title);
+}
+section.contact .contact-animation {
+  height: 40px;
+}
+/* Left Section */
+/* Right Section */
+section.contact .animation-contact-us {
+  height: 400px;
+}
+/* Right Section */
+
+/* Responsive */
+@media (max-width: 1250px) {
+  section.contact .animation-contact-us {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  section.contact form.left-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  section.contact form.left-section div.flex {
+    flex-direction: column;
+    align-items: start;
+  }
+  section.contact #email,
+  section.contact #message {
+    width: calc(100% - 1rem);
+    margin-left: 0;
+    padding: 0.7rem 0.5rem;
+    margin-top: 1rem;
+  }
+  section.contact div.right-section {
+    display: none;
+  }
+  section.contact button.submit {
+    width: 30%;
+    align-self: center;
+  }
+}
+/* Responsive */

@@ -1,0 +1,73 @@
+/*
+=============================
+Table of Content
+=============================
+1.Left Section
+2. Right Section
+ */
+
+section.about {
+  margin-top: 3rem;
+}
+/* Left Section */
+section.about .left-section {
+  flex-grow: 1;
+}
+section.about .parent-avatar.flex {
+  align-items: end;
+}
+section.about .avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 1px solid darkorange;
+  padding: 1px;
+  box-shadow: 1px 1px 40px rgba(203, 200, 200, 0.586) inset;
+  object-fit: cover;
+}
+section.about .icon-verified {
+  color: var(--blue);
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
+  margin-left: -1.3rem;
+}
+section.about h1.title {
+  font-size: 2.85rem;
+  line-height: 3.3rem;
+  margin: 24px 0;
+  color: var(--title);
+}
+section.about p.sub-title {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+  margin-bottom: 32px;
+}
+section.about .icons {
+  gap: 1.5rem;
+}
+section.about .icon {
+  font-size: 1.3rem;
+  color: var(--subtitle);
+}
+section.about .icons .icon:hover {
+  font-size: 1.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--icon-hover);
+}
+/* Left Section */
+
+/* Right Section */
+section.about .animation-dev {
+  width: 350px;
+}
+/* Right Section */
+
+/* Responsive */
+@media (max-width: 1250px) {
+  section.about .animation-dev {
+    display: none;
+  }
+}
+/* Responsive */
